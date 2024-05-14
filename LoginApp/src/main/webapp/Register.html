@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Page</title>
+		<style>
+			.container {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    height: 100vh;
+			}
+			table {
+			    border-collapse: collapse;
+			    width: 100%;
+			    border: 1px solid #ddd;
+			    max-width: 1000px;
+    			height: auto;
+			}
+			
+			th, td {
+			    text-align: left;
+			    border-bottom: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			<form action='RegisterServlet' method='post'>
+				<table class='center-table'>
+					<tr>
+						<td><h3 align='center'>Register</h3></td>
+					</tr>
+					<tr>
+						<td>
+							<input type='text' name='uname' placeholder='Username'/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type='password' name='pwd' placeholder='Password'/>					
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type='password' name='cnfm' placeholder='Confirm Password'/>						
+						</td>
+					</tr>
+					<tr>
+						<td align='center'>
+							<input type='submit' value='Register'/>	
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
